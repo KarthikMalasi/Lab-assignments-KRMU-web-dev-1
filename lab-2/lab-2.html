@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Karthik Malasi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <h2>Welcome to my portfolio</h2>
+            <p>Hello! I am currently learning Web Development. This is my portfolio.</p>
+
+            <h2>About Me</h2>
+            <img src="/photo.jpeg" alt="Profile Picture" width="200" height="225" title="Profile Picture">
+
+            <p>I am passionate about learning web development and building creative projects.</p>
+        </article>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><b>Portfolio Website:</b> A personal one-page website to show my bio, skills, and details.</li>
+                <li><b>Blogs:</b> A website with blogs using semantic and basic HTML.</li>
+                <li><b>User Form:</b> A form webpage where users fill details like name, email, etc., and submit.</li>
+            </ul>
+
+            <h2>Technical Skills</h2>
+            <table>
+                <thead id="tablehead">
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="username" required>
+                <br><br>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="email" required>
+                <br><br>
+
+                <label>Message :</label>
+                <textarea name="Message" placeholder="Enter your message"></textarea>
+                <br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
