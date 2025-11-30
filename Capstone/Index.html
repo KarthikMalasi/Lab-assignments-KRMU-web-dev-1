@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickBite — Food Delivery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="Images/logo.png" alt="QuickBite logo" class="logo" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-name">QuickBite</span>
+          <small class="brand-tag">Fresh food. Fast delivery.</small>
+        </div>
+      </div>
+
+      <nav class="main-nav" role="navigation" >
+        <ul>
+          <li><a href="#menu" > Menu</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#signup" class="btn btn-ghost">Sign up</a>
+        <a href="#menu" class="btn btn-primary">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 id="hero-title">Hot meals, delivered quickly.</h1>
+        <p class="hero-tagline">Choose fresh dishes from local kitchens and get them delivered hot to your door.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#menu">Browse Menu</a>
+          <a class="btn btn-ghost" href="#how-it-works">How it works</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="Images/head.png" alt="food" />
+      </figure>
+    </section>
+
+    <!-- Filters -->
+    <section id="menu" class="section">
+      <div class="section-grid">
+        <aside class="filters">
+          <h2>Filters</h2>
+          <form class="filters-form">
+            <fieldset>
+              <legend>Diet</legend>
+              <label><input type="checkbox"> Vegetarian</label>
+              <label><input type="checkbox"> Vegan</label>
+              <label><input type="checkbox"> Gluten-free</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Cuisine</legend>
+              <label><input type="radio" name="cuisine"> All</label>
+              <label><input type="radio" name="cuisine"> Asian</label>
+              <label><input type="radio" name="cuisine"> Italian</label>
+            </fieldset>
+        </aside>
+
+
+        
+        <section class="menu">
+          <h2 id="menu-heading">Popular dishes</h2>
+
+          <div class="grid menu-grid" role="list">
+
+            <!-- Meal 1 -->
+            <article class="card" role="listitem">
+              <img src="Images/pizza.png" alt="Margherita pizza " class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Margherita Pizza</h3>
+                <p class="card-desc">Classic tomato, fresh mozzarella, basil.</p>
+                <div class="card-meta">
+                  <span class="price">₹299</span>
+                  <a class="btn btn-sm" href="#contact" >Order</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Meal 2 -->
+            <article class="card" role="listitem">
+              <img src="Images/Ramen.jpg" alt=" spicy ramen with egg" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Spicy Ramen</h3>
+                <p class="card-desc">Rich broth, springy noodles, soft egg.</p>
+                <div class="card-meta">
+                  <span class="price">₹349</span>
+                  <a class="btn btn-sm" href="#contact" >Order</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Meal 3 -->
+            <article class="card" role="listitem">
+              <img src="Images/Grilled-Chicken-Wrap.jpg" alt="Grilled chicken wrap" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Grilled Chicken Wrap</h3>
+                <p class="card-desc">Tangy yogurt sauce, fresh veggies.</p>
+                <div class="card-meta">
+                  <span class="price">₹249</span>
+                  <a class="btn btn-sm" href="#contact" >Order</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Meal 4 -->
+            <article class="card" role="listitem">
+              <img src="Images/Veggie-Power-Bowl.png" alt="Veggie bowl" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Power Veg Bowl</h3>
+                <p class="card-desc">Quinoa, roasted veggies, tahini drizzle.</p>
+                <div class="card-meta">
+                  <span class="price">₹279</span>
+                  <a class="btn btn-sm" href="#contact" >Order</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Meal 5 -->
+            <article class="card" role="listitem">
+              <img src="Images/Chocolate-Mousse.jpg" alt="Chocolate mousse dessert " class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Chocolate Mousse</h3>
+                <p class="card-desc">Creamy dark chocolate mousse.</p>
+                <div class="card-meta">
+                  <span class="price">₹149</span>
+                  <a class="btn btn-sm" href="#contact" >Order</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <article class="step">
+          <h3>1. Choose</h3>
+          <p>Browse the menu and pick dishes you love.</p>
+        </article>
+        <article class="step">
+          <h3>2. Checkout</h3>
+          <p>Enter delivery details and confirm your order.</p>
+        </article>
+        <article class="step">
+          <h3>3. Enjoy</h3>
+          <p>Get fresh food delivered hot to your door.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- Price/payment -->
+    <section id="pricing" class="section">
+      <h2>Pricing plans</h2>
+      <div class="grid pricing-grid">
+        <article class="pricing card">
+          <h3>Pay-as-you-go</h3>
+          <p class="price-large">No subscription</p>
+          <ul>
+            <li>Standard delivery</li>
+            <li>Per-order fees</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Start</a>
+        </article>
+
+        <article class="pricing card highlight">
+          <h3>Monthly</h3>
+          <p class="price-large">₹499 / month</p>
+          <ul>
+            <li>Free delivery</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn btn-primary" href="#signup">Subscribe</a>
+        </article>
+
+        <article class="pricing card">
+          <h3>Annual</h3>
+          <p class="price-large">₹4999 / year</p>
+          <ul>
+            <li>Save two months</li>
+            <li>Exclusive offers</li>
+          </ul>
+          <a class="btn btn-primary" href="#signup">Subscribe</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / Signup form -->
+    <section id="contact" class="section contact-section">
+      <h2 id="contact-heading">Contact & Inquiry</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 9**** *****">
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="What would you like to ask?"
+              required></textarea>
+          </div>
+
+          <div class="form-row form-actions">
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Visit / Delivery</h3>
+          <p>We deliver across the city. Open hours: 10:00 — 23:00.</p>
+          <h3>Address</h3>
+          <address>
+            12 Food Lane, Rajeev Chowk<br>
+            Delhi, 110001
+          </address>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <h2 id="testimonials-heading">What customers say</h2>
+      <div class="grid testimonial-grid">
+        <article class="testimonial card">
+          <p>"QuickBite delivered exactly when they said. Food was hot and tasty."</p>
+          <p class="cite">— Aman K.</p>
+        </article>
+
+        <article class="testimonial card">
+          <p>"The monthly plan saved me money and the customer service is helpful."</p>
+          <p class="cite">— Priya M.</p>
+        </article>
+
+        <article class="testimonial card">
+          <p>"Great variety and easy ordering."</p>
+          <p class="cite">— Raj S.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <small><span id="year"></span> QuickBite. All rights reserved.</small>
+        <nav>
+          <a href="#privacy">Privacy</a> ·
+          <a href="#terms">Terms</a>
+        </nav>
+  </footer>
+</body>
+
+</html>
